@@ -26,7 +26,7 @@
     --h2-font:2rem;
     --h5-font:1.25rem;
     --a-font:1.1rem;
-    --p-font:1rem;
+    --p-font:0.9rem;
     --logo-font:1.85rem;
 }
 
@@ -34,6 +34,7 @@ body{
     width: 100%;
     height: 100%;
     background-color: var(--background-colour);
+    scroll-behavior: smooth;
 }
 
                 /* <----------- Section ------------> */
@@ -62,10 +63,11 @@ section{
 
                 /* <----------- p ------------> */
 .paragraph{
-    width: 80%;
+    width: 85%;
     font-size: var(--p-font);
     color: var(--p-color);
     margin-bottom: 25px;
+    color: #555;
 }
 
                 /* <----------- Button ------------> */
@@ -268,8 +270,52 @@ section{
 .lower-part .box .showName{
     margin-top: 10px;
     font-size: var(--a-font);
+    font-weight: 600;
     color: var(--a-color);
     opacity: 0;
     transition: all 0.4s ease-in;
     text-align: center;
+}
+    
+            /* <----------- About Portion ------------> */
+.about{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+    position: relative;
+}
+.about .left-part{
+    position: relative;
+}
+.about .left-part .bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}
+.about .left-part .h5-sec{
+    position: relative;
+}
+.about .left-part .h5-sec::before{
+    content: "";
+    position: absolute;
+    left: 125px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 2.5px;
+    background-color: var(--h5-color);
+    z-index: 1;
+    border-radius: 25px;
+}
+.about .left-part .heading span{
+    font-size: 2.5rem;
+}
+.about .right-part img{
+    width: 34vw;
 }
