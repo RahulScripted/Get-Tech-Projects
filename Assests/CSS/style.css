@@ -219,7 +219,7 @@ section{
     width: 28rem;
 }
 
-            /* <----------- Home Portion ------------> */
+            /* <----------- Made With Portion ------------> */
 .container{
     width: 100%;
     height: 120px;
@@ -315,4 +315,123 @@ section{
 }
 .about .right-part img{
     width: 34vw;
+}
+
+            /* <----------- Projects Portion ------------> */
+.Projects{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+.Projects .h5-sec{
+    font-weight: 600;
+    font-size: 1.85rem;
+}
+.Projects .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+}
+.Projects .container .card{
+    padding: 10px 30px 20px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+    border-radius: 10px;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.2);
+    position: relative;
+    overflow: hidden;
+}
+.Projects .container .card::before{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    right: -4%;
+    top: -4%;
+    border-radius: 50%;
+    transition: all 0.3s ease-in;
+    z-index: -1;
+}
+.Projects .container .card:hover{
+    transform: scale(0.95);
+}
+.Projects .container .card:hover::before{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    border-radius: 0;
+}
+.Projects .container .card .main-heading{
+    margin: 14px 0 6px;
+}
+.Projects .container .card:hover .main-heading{
+    color: #fdfdfd;
+}
+.Projects .container .card .paragraph{
+    width: 100%;
+    text-align: center;
+} 
+.Projects .container .card:hover .paragraph{
+    color: #ccc;
+}
+.explore {
+    color: var(--active-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid var(--active-color);
+    padding: 8px 20px;
+    font-size: var(--p-font);
+    cursor: pointer;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    transition: all 0.5s ease-in;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}  
+.explore a{
+    color: var(--active-color);
+    transition: all 0.5s ease-in;
+}
+.explore:hover {
+    background-color: #ffffff1c;
+    color: #fdfdfd;
+}  
+.explore:hover a{
+    color: var(--background-colour);
+}
+.explore::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color: var(--active-color);
+    z-index: -1;
+    transition: all 0.75s ease-in-out;
+}  
+.explore:hover::before {
+    width: 180%;
+}  
+.Projects .container .card:hover .explore{
+    border: 2px solid var(--background-colour);
+}
+.Projects .container .card:hover .explore a{
+    color: var(--background-colour);
 }
