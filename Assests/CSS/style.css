@@ -39,8 +39,8 @@ body{
 
                 /* <----------- Section ------------> */
 section{
-    margin-top: 5%;
-    padding: 40px 45px;
+    margin-top: 7%;
+    padding: 50px 45px;
 }
 
                 /* <----------- h5 ------------> */
@@ -285,6 +285,7 @@ section{
     justify-content: space-between;
     gap: 5rem;
     position: relative;
+    padding-top: 120px;
 }
 .about .left-part{
     position: relative;
@@ -324,7 +325,8 @@ section{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 4rem;
+    gap: 5rem;
+    padding-top: 120px;
 }
 .Projects .h5-sec{
     font-weight: 600;
@@ -332,7 +334,6 @@ section{
 }
 .Projects .container{
     width: 100%;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -434,4 +435,143 @@ section{
 }
 .Projects .container .card:hover .explore a{
     color: var(--background-colour);
+}
+
+
+        /* <----------- Contribution Portion ------------> */
+.contribution{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+    padding-top: 120px;
+}
+.contribution .h5-sec{
+    position: relative;
+}
+.contribution .h5-sec::before{
+    content: "";
+    position: absolute;
+    left: 125px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 2px;
+    background-color: var(--h5-color);
+    z-index: 1;
+    border-radius: 25px;
+}
+.contribution .right-part img{
+    width: 30vw;
+}
+
+
+        /* <----------- Testimonial Portion ------------> */
+.swiper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.swiper .h5-sec{
+    text-align: center;
+    font-size: 1.55rem;
+    position: relative;
+}
+.swiper .h5-sec::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5%;
+    transform: translateX(-50%);
+    width: 75px;
+    height: 2px;
+    background-color: var(--h5-color);
+    z-index: 1;
+    border-radius: 25px;
+}
+.swiper-wrapper{
+    width: 100%;
+    padding: 20px 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.swiper-slide {
+    padding: 20px 25px;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.swiper-slide img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--span-color);
+}
+.swiper-slide .name{
+    margin: 10px 0 15px;
+    font-size: 1.45rem;
+    font-family: "Ubuntu", sans-serif;
+}
+.swiper-slide .paragraph{
+    margin-bottom: 20px;
+    display: flex;
+}
+.swiper-slide .star{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    margin-bottom: 15px;
+}
+.swiper-slide .star i{
+    font-size: 1.3rem;
+    color: #FFD700;
+}
+
+
+        /* <----------- Footer Portion --------------> */
+.footer{
+    width: 100%;
+    background-color: var(--active-color);
+    margin-top: 120px;
+    padding: 40px 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+}
+.footer .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.footer .row .logo,
+.footer .row .col h2{
+    color: var(--background-colour);
+}
+.footer .row .col ul li{
+    margin: 15px 0;
+    transition: all 0.3s ease-in;
+}
+.footer .row .col ul li:hover{
+    transform: translateX(10px);
+}
+.footer .row .col ul li a{
+    color: var(--background-colour);
+    cursor: pointer;
+}
+.footer-bottom{
+    color: var(--background-colour);
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: "Ubuntu", sans-serif;
 }
