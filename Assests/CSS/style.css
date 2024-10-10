@@ -37,6 +37,26 @@ body{
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    width: 16px;
+    height: 12px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--h5-color);
+    border-radius: 10px;
+    border: 3px solid transparent;
+    background-clip: padding-box;
+    cursor: pointer;
+}
+::-webkit-scrollbar-button {
+    background-color: var(--button-bg-color);
+    display: none;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #c73208;
+}
+  
+
                 /* <----------- Section ------------> */
 section{
     margin-top: 7%;
@@ -135,6 +155,11 @@ section{
     align-items: center;
     justify-content: space-between;
     z-index: 100;
+    transition: all 0.4s ease-in;
+}
+.header.shadow{
+    background-color: #2121224a;
+    backdrop-filter: blur(15px);
 }
 
 /* <--------- Logo ------------> */
@@ -148,6 +173,9 @@ section{
     font-weight: 700;
     font-family: "Ubuntu", sans-serif;
     letter-spacing: 3px;
+}
+.header.shadow .logo{
+    color: var(--background-colour);
 }
 
 /* <--------- navBar ------------> */
@@ -163,14 +191,20 @@ section{
 .navBar li a{
     font-size: var(--a-font);
     color: var(--a-color);
-    font-weight: 400;
+    font-weight: 600;
     transition: all 0.3s ease-in-out;
 }
 
 .navBar li a:hover,
 .navBar li a:focus{
-    color: var(--active-color);
-    font-weight: 500;
+    color: var(--h5-color);
+}
+.header.shadow .navBar li a{
+    color: var(--background-colour);
+}
+.header.shadow .navBar li a:hover,
+.header.shadow .navBar li a:focus{
+    color: var(--h5-color);
 }
 
 /* <--------- menu-icon ------------> */
@@ -289,15 +323,6 @@ section{
 }
 .about .left-part{
     position: relative;
-}
-.about .left-part .bg{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: -1;
 }
 .about .left-part .h5-sec{
     position: relative;
