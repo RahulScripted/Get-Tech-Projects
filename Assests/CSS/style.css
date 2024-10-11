@@ -144,6 +144,16 @@ section{
     transform: scale(0.95);
 }
 
+                /* <---------- SVG -----------> */
+.left-part .curve{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: -1;
+    width: 125px;
+}
+
             /* <--------- Scroll Up Button -----------> */
 .scrollUp{
     position: fixed;
@@ -296,14 +306,6 @@ section{
     width: 45px;
     height: 2px;
     background-color: var(--h5-color);
-}
-.home .left-part .curve{
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateY(-50%);
-    z-index: -1;
-    width: 125px;
 }
 .home .right-part img{
     width: 40vw;

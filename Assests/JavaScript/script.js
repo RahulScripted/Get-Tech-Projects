@@ -77,6 +77,9 @@ const sr = ScrollReveal({
     reset: true,
 })
 
+// SVG
+sr.reveal('.heading.left-part svg',{origin:'left',delay:'300'});
+
 // Home 
 sr.reveal('.home .left-part .h5-sec',{origin:'left',delay:'100'});
 sr.reveal('.home .left-part .heading',{origin:'left',delay:'200'});
@@ -109,4 +112,4 @@ sr.reveal('.contribution .right-part img',{origin:'right',delay:'200'});
 // Footer
 sr.reveal('.footer .logo',{origin:'left',delay:'200'});
 sr.reveal('.footer .row',{origin:'left',delay:'200',interval:'400'});
-sr.reveal('.footer .footer-bottom',{origin:'top',delay:'200',interval:'400'});
+sr.reveal('.footer .footer-bottom',{origin:'right',delay:'200',interval:'400'});
