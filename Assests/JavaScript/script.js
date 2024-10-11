@@ -32,6 +32,18 @@ window.onscroll = () => {
     navBar.classList.remove('active');
 }
 
+// Scroll Up Button Design
+let scrollUp = document.querySelector('.scrollUp');
+window.addEventListener('scroll',()=>{
+    scrollUp.classList.toggle('up',window.scrollY > 150);
+});
+function ScrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+
 // Swiper JavaScript
 let swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
@@ -59,7 +71,7 @@ let swiper = new Swiper(".mySwiper", {
 // Scroll revel animation
 const sr = ScrollReveal({
     origin: 'top',
-    distance: '180px',
+    distance: '120px',
     duration: 1800,
     delay: 200,
     reset: true,
