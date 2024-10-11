@@ -55,3 +55,46 @@ let swiper = new Swiper(".mySwiper", {
         }
     }
 });
+
+// Scroll revel animation
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '180px',
+    duration: 1800,
+    delay: 200,
+    reset: true,
+})
+
+// Home 
+sr.reveal('.home .left-part .h5-sec',{origin:'left',delay:'100'});
+sr.reveal('.home .left-part .heading',{origin:'left',delay:'200'});
+sr.reveal('.home .left-part .paragraph',{origin:'left',delay:'300'});
+sr.reveal('.home .left-part',{origin:'left',delay:'400'});
+sr.reveal('.home .right-part img',{origin:'right',delay:'200'});
+
+// Made With
+sr.reveal('.content .h5-sec',{origin:'top',delay:'200'});
+sr.reveal('.lower-part .box',{origin:'left',delay:'200',interval:'400'});
+
+// About 
+sr.reveal('.about .left-part .h5-sec',{origin:'left',delay:'100'});
+sr.reveal('.about .left-part .heading',{origin:'left',delay:'200'});
+sr.reveal('.about .left-part .paragraph',{origin:'left',delay:'300'});
+sr.reveal('.about .left-part',{origin:'left',delay:'400'});
+sr.reveal('.about .right-part img',{origin:'right',delay:'200'});
+
+// Project
+sr.reveal('.Projects .h5-sec',{origin:'top'});
+sr.reveal('.Projects .card',{origin:'left',delay:'200',interval:'400'});
+
+// Contribution 
+sr.reveal('.contribution .left-part .h5-sec',{origin:'left',delay:'100'});
+sr.reveal('.contribution .left-part .heading',{origin:'left',delay:'200'});
+sr.reveal('.contribution .left-part .paragraph',{origin:'left',delay:'300'});
+sr.reveal('.contribution .left-part',{origin:'left',delay:'400'});
+sr.reveal('.contribution .right-part img',{origin:'right',delay:'200'});
+
+// Footer
+sr.reveal('.footer .logo',{origin:'left',delay:'200'});
+sr.reveal('.footer .row',{origin:'left',delay:'200',interval:'400'});
+sr.reveal('.footer .footer-bottom',{origin:'top',delay:'200',interval:'400'});
