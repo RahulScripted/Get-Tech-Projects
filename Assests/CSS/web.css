@@ -1,0 +1,108 @@
+            /* <------------ Heading ---------------> */
+
+.webHeading{
+    width: 100%;
+    padding: 20px 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+/* <---- Top Part -----> */
+.webHeading .top-part{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.webHeading .top-part .backButton{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.4s ease-in;
+}
+.webHeading .top-part .backButton i{
+    font-size: 25px;
+    cursor: pointer;
+}
+.webHeading .top-part .backButton:hover{
+    background-color: var(--h5-color);
+}
+.webHeading .top-part .backButton:hover i{
+    color: #fdfefe;
+}
+
+/* <---- Bottom Part -----> */
+.bottom-part{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.bottom-part .heading{
+    margin-bottom: 25px;
+    font-size: 2.4rem;
+}
+.bottom-part .paragraph{
+    width: 80%;
+    font-size: 1rem;
+}
+.bottom-part .paragraph strong{
+    color: var(--h5-color);
+}
+
+            /* <-------- Level ---------> */
+.beginner,
+.intermediate,
+.expert,
+.game{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.beginner .h5-sec,
+.intermediate .h5-sec,
+.expert .h5-sec,
+.game .h5-sec{
+    font-size: 1.4rem;
+    position: relative;
+}
+.beginner .h5-sec::before,
+.beginner .h5-sec::after,
+.intermediate .h5-sec::before,
+.intermediate .h5-sec::after,
+.expert .h5-sec::before,
+.expert .h5-sec::after,
+.game .h5-sec::before,
+.game .h5-sec::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 2.5px;
+    background-color: var(--h5-color);
+    border-radius: 25px;
+}
+.beginner .h5-sec::before,
+.intermediate .h5-sec::before,
+.expert .h5-sec::before,
+.game .h5-sec::before{
+    left: -70px;
+}
+.beginner .h5-sec::after,
+.intermediate .h5-sec::after,
+.expert .h5-sec::after,
+.game .h5-sec::after{
+    right: -70px;
+}
+            
+
+/* <------ Swiper Part --------> */

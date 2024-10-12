@@ -77,8 +77,6 @@ const sr = ScrollReveal({
     reset: true,
 })
 
-// SVG
-sr.reveal('.heading.left-part svg',{origin:'left',delay:'300'});
 
 // Home 
 sr.reveal('.home .left-part .h5-sec',{origin:'left',delay:'100'});
