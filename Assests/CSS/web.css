@@ -149,8 +149,34 @@
 
 /* <------- Make It Responsive -----------> */
 @media (max-width:1000px){
+    .webHeading{
+        padding: 20px;
+        gap: 2rem;
+    }
+    .bottom-part .heading{
+        font-size: 1.75rem;
+    }
     .bottom-part .paragraph{
         width: 100%;
+        font-size: 1rem;
+    }
+}
+
+/* <-------- Tab Design ---------> */
+@media (max-width:768px){
+    .webHeading{
+        padding: 20px;
+        gap: 2rem;
+    }
+    .bottom-part .paragraph{
+        font-size: 0.9rem;
+    }
+}
+
+/* <-------- Mobile Design -----------> */
+@media (max-width:500px){
+    .bottom-part .paragraph{
         font-size: 0.8rem;
+        text-align: left;
     }
 }

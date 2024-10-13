@@ -584,6 +584,22 @@ section{
 
 
         /* <----------- Testimonial Portion ------------> */
+.testimonial .h5-sec{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+.testimonial .h5-sec::before{
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 2.5px;
+    background-color: var(--h5-color);
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+}
 .swiper {
     padding: 0 45px;
     width: 100%;
