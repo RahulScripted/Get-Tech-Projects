@@ -96,18 +96,19 @@
     border-right: none;
 }
 .container .box .img-sec{
-    width: 175px;
-    height: 175px;
+    width: 125px;
+    height: 125px;
 }
 .container .box .img-sec img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
     border-radius: 0;
     border: none;
 }
 .box .name{
     font-family: "Ubuntu", sans-serif;
-    margin: 20px 0;
+    margin: 25px 0;
 }
 .box .bottom{
     width: 100%;
