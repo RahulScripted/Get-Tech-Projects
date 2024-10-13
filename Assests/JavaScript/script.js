@@ -45,28 +45,28 @@ function ScrollToTop() {
 }
 
 // Swiper JavaScript
-let swiper = new Swiper(".mySwiper", {
-    spaceBetween: 30,
-    pagination: {
-        el: ".swiper-pagination",
-        dynamicBullets: true,
-    },
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-    },
-    breakpoints: {
-        500: {
-            slidesPerView: 1,
+document.addEventListener("DOMContentLoaded", function () {
+    let swiper = new Swiper(".testimonial .mySwiper", {
+        spaceBetween: 30,
+        freeMode: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
         },
-        768: {
-            slidesPerView: 2,
+        breakpoints: {
+            640: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 3,
+            },
         },
-        1024: {
-            slidesPerView: 3,
-        }
-    }
+    });
 });
+
 
 // Scroll revel animation
 const sr = ScrollReveal({
