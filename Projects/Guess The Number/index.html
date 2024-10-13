@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Guess Number</title>
+
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="Assests/CSS/style.css">
+
+    <!-- Link To Web Icon -->
+    <link rel="shortcut icon" href="Assests/Img/WebIcon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h3>I'm thinking a number in between 1 to 100</h3>
+        <h3>Can You Guess It???</h3>
+        <input type="number" placeholder="Enter" id="guess">
+        <br>
+        <div class="btns">
+            <button onclick="play()" id="guessBtn">Guess</button>
+            <button onclick="reset()" id="resetBtn">Reset</button>
+        </div>
+        <p id="message1">Number of guesses are : 0</p>
+        <p id="message2">Guessed numbers are : None</p>
+        <p id="message3"></p>
+    </div>
+
+    <!-- Link To JavaScript -->
+    <script src="Assests/JavaScript/script.js"></script>
+</body>
+</html>

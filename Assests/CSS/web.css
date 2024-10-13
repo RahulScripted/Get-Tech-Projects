@@ -1,3 +1,7 @@
+body{
+    background-color: var(--active-color);
+}
+
             /* <------------ Heading ---------------> */
 
 .webHeading{
@@ -26,6 +30,7 @@
 .webHeading .top-part .backButton i{
     font-size: 25px;
     cursor: pointer;
+    color: var(--background-colour);
 }
 .webHeading .top-part .backButton:hover{
     background-color: var(--h5-color);
@@ -46,63 +51,77 @@
 .bottom-part .heading{
     margin-bottom: 25px;
     font-size: 2.4rem;
+    color: var(--background-colour);
 }
 .bottom-part .paragraph{
     width: 80%;
     font-size: 1rem;
+    color: #d1d2d2;
 }
 .bottom-part .paragraph strong{
     color: var(--h5-color);
 }
 
-            /* <-------- Level ---------> */
-.beginner,
-.intermediate,
-.expert,
-.game{
+                    /* <-------- Level ---------> */
+.container{
     width: 100%;
-    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.container .box{
+    width: 350px;
+    height: 375px;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     flex-direction: column;
+    border-radius: 10px;
+    background-color: #ffffff0f;
+    padding: 0 40px;
+    cursor: pointer;
 }
-.beginner .h5-sec,
-.intermediate .h5-sec,
-.expert .h5-sec,
-.game .h5-sec{
-    font-size: 1.4rem;
-    position: relative;
+.container .box .img-sec{
+    width: 225px;
+    height: 225px;
 }
-.beginner .h5-sec::before,
-.beginner .h5-sec::after,
-.intermediate .h5-sec::before,
-.intermediate .h5-sec::after,
-.expert .h5-sec::before,
-.expert .h5-sec::after,
-.game .h5-sec::before,
-.game .h5-sec::after{
-    content: "";
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 50px;
-    height: 2.5px;
+.container .box .img-sec img{
+    width: 100%;
+    height: 100%;
+}
+.box .name{
+    font-family: "Ubuntu", sans-serif;
+    color: var(--background-colour);
+    margin: 20px 0;
+}
+.box .bottom{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.box .bottom a{
+    color: var(--background-colour);
+}
+.box .bottom a:nth-child(1){
+    font-size: 1.5rem;
+    color: var(--h5-color);
+    transition: all 0.4s ease-in;
+}
+.box .bottom a:nth-child(1):hover{
+    color: var(--background-colour);
+}
+.box .bottom a:nth-child(2){
+    padding: 7px 20px;
     background-color: var(--h5-color);
-    border-radius: 25px;
+    border-radius: 20px;
+    font-size: 14px;
+    box-shadow: 0 3px 5px rgba(255,255,255,0.15);
+    border: 2px solid var(--h5-color);
+    transition: all 0.4s ease-in;
 }
-.beginner .h5-sec::before,
-.intermediate .h5-sec::before,
-.expert .h5-sec::before,
-.game .h5-sec::before{
-    left: -70px;
+.box .bottom a:nth-child(2):hover{
+    background-color: transparent;
+    box-shadow: none;
 }
-.beginner .h5-sec::after,
-.intermediate .h5-sec::after,
-.expert .h5-sec::after,
-.game .h5-sec::after{
-    right: -70px;
-}
-            
-
-/* <------ Swiper Part --------> */
