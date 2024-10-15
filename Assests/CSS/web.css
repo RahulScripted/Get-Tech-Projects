@@ -98,11 +98,11 @@
 }
 .container.miniProjects .box{
     width: 300px;
-    height: 300px;
+    height: 325px;
 }
 .container .box .img-sec{
-    width: 125px;
-    height: 125px;
+    width: 150px;
+    height: 150px;
 }
 .container .box .img-sec.sec{
     width: 100%;
