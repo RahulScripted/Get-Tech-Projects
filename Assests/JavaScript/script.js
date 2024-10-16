@@ -1,3 +1,13 @@
+// To show active pages
+let navBarLi = document.querySelectorAll(".navBar li");
+
+navBarLi.forEach(item => {
+    item.addEventListener("click", () => {
+        navBarLi.forEach(el => el.classList.remove("show"));
+        item.classList.add("show");
+    });
+});
+
 // Add shadow on nav bar
 window.addEventListener("scroll", function () {
     let navbar = document.getElementById("header");

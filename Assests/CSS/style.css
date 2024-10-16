@@ -252,8 +252,13 @@ section{
 .navBar li a{
     font-size: var(--a-font);
     color: var(--a-color);
-    font-weight: 600;
+    font-weight: 300;
     transition: all 0.3s ease-in-out;
+}
+.header.shadow .navBar li.show a,
+.navBar li.show a{
+    color: var(--h5-color);
+    font-weight: 500;
 }
 .navBar li a:hover{
     color: var(--h5-color);
@@ -264,6 +269,7 @@ section{
 .header.shadow .navBar li a:hover{
     color: var(--h5-color);
 }
+
 
 /* <--------- menu-icon ------------> */
 .menu-icon{
