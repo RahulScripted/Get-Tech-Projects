@@ -1,5 +1,5 @@
 /* <----- google Font -----> */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
     padding: 0;
@@ -7,7 +7,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-family: "Poppins", sans-serif;
+    font-family: "Noto Sans", sans-serif;
 }
 
 /* <------ Perquisites --------> */
@@ -16,22 +16,52 @@
     --text-color: #171717;
     --p-color: #838383;
     --background-color: #FFFFFF;
+    --hover-color: #F4F6F5;
 
-    --heading-font: 3rem;
+    --heading-font: 4rem;
     --logo-font: 2.15rem;
-    --second-heading-font : 1.5rem;
+    --second-heading-font : 2.5rem;
+    --i-font:2rem;
     --a-font: 1.1rem;
-    --p-font: 1rem; 
+    --header-p-font: 1.25rem; 
+    --p-font: 1rem;
 }
 
 body{
     width: 100%;
+    max-width: 1200px;
     height: 100%;
     background-color: var(--background-color);
     position: relative;
+    scroll-behavior: smooth;
 }
 
 /* <----- Global ------> */
+section{
+    margin-top: 50px;
+    padding-left: 20px;
+}
+.heading{
+    font-size: var(--heading-font);
+    color: var(--main-color);
+    line-height: 4.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.headerParagraph{
+    font-size: var(--header-p-font);
+    color: var(--p-color);
+}
+.secondHeading{
+    font-size: var(--second-heading-font);
+    color: var(--main-color);
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.paragraph{
+    font-size: var(--p-font);
+    color: var(--p-color);
+}
 
 /* <---- Header Portion -----> */
 .header{
@@ -41,6 +71,10 @@ body{
     align-items: center;
     justify-content: space-between;
     position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--background-color);
+    z-index: 1000;
 }
 .header .logo{
     font-size: var(--logo-font);
@@ -81,3 +115,59 @@ body{
     height: 3px;
     background-color: var(--text-color);
 }
+
+/* <---- Home -----> */
+.home{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.home .text-content{
+    position: absolute;
+    width: 500px;
+    padding: 20px;
+    background-color: #ffffff13;
+    backdrop-filter: blur(150px);
+}
+.home .img-sec{
+    width: 55rem;
+    margin-left: auto;
+}
+.home .img-sec img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* <---- Hot Deals ------> */
+.hotDeals{
+    padding: 20px 30px;
+    margin-top: 7%;
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+.hotDeals .top-part{
+    width: 500px;
+}
+.hotDeals .bottom-part{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 2rem;
+}
+.hotDeals .bottom-part i{
+    font-size: var(--i-font);
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.hotDeals .bottom-part h5{
+    font-size: var(--header-p-font);
+    margin-bottom: 10px;
+}
+
+
+/* <---- About ------> */
