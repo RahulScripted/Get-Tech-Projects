@@ -7,3 +7,16 @@ navBar.forEach(item => {
         item.classList.add("active");
     });
 });
+
+// Smooth Scrolling
+document.querySelectorAll('.navBar li a').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+      
+        targetSection.scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
