@@ -20,3 +20,6 @@ document.querySelectorAll('.navBar li a').forEach(link => {
         });
     });
 });
+
+// Swiper JS
+var swiper = new Swiper(".mySwiper", {});
